@@ -19,5 +19,4 @@ ajaxPost.html
 *.egg
 *.egg-info
 dist
-build
 test.vue

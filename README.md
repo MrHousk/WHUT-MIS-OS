@@ -1,4 +1,4 @@
-# whut-mis
+# 计算机操作系统教学辅助软件
 
 > A Vue.js project
 
