@@ -1,0 +1,181 @@
+//朴素按钮
+.el-button--primary.is-plain:focus {
+    background: #eef1f4;
+    border-color: #eef1f4;
+    color: $color-theme;
+}
+
+//走马灯
+.el-carousel {
+    @media only screen and (min-device-width: 1024px) and(max-device-width: 1359px) {
+        width: 85%;
+    }
+    @media only screen and (min-device-width: 1360px) and(max-device-width:1920px) {
+        width: 65%;
+    }
+    flex-shrink: 0;
+    .el-carousel__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $color-theme2;
+        top: 40px;
+        height: 80%;
+        border-radius: 2px;
+        >div {
+            color: #fff;
+            font-size: 1.4em;
+        }
+    }
+    .el-carousel__item--card.is-in-stage {
+        width: 55%;
+        margin: 0 0 0 -3%;
+    }
+    .el-carousel__indicators--outside button {
+        opacity: 1;
+        width: 35px;
+        background-color: #989CA0;
+    }
+    .el-carousel__indicator.is-active button {
+        background-color: $color-theme;
+    }
+}
+
+@media only screen and (min-device-width: 1024px)and(max-device-width:1366px) {
+    .el-carousel .el-carousel__container {
+        height: 250px !important;
+        margin-top: -20px;
+    }
+    .el-carousel__arrow {
+        top: 55%
+    }
+    .el-carousel__indicator {
+        padding: 12px 8px;
+    }
+    .el-carousel__indicators--outside button {
+        height: 2px;
+    }
+}
+
+@media only screen and (min-device-width: 1367px)and(max-device-width:1920px) {
+    .el-carousel .el-carousel__container {
+        height: 350px !important;
+        margin-top: -20px;
+    }
+    .el-carousel__arrow {
+        top: 52%
+    }
+    .el-carousel__indicator {
+        padding: 0 8px;
+    }
+    .el-carousel__indicators {
+        margin-top: -15px;
+    }
+    .el-carousel__indicators--outside button {
+        height: 3px;
+    }
+}
+
+.el-notification .el-icon-error {
+    color: $color-error;
+}
+
+.el-notification .el-icon-success {
+    color: $color-theme;
+}
+
+.el-form-item.is-success .el-input__inner,
+.el-form-item.is-success .el-input__inner:focus,
+.el-form-item.is-success .el-textarea__inner,
+.el-form-item.is-success .el-textarea__inner:focus {
+    border-color: $color-theme;
+}
+
+.el-form-item.is-error .el-input__inner,
+.el-form-item.is-error .el-input__inner:focus,
+.el-form-item.is-error .el-textarea__inner,
+.el-form-item.is-error .el-textarea__inner:focus {
+    border-color: $color-theme;
+}
+
+.el-form-item__label {
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.el-form-item.is-required .el-form-item__label:before {
+    color: #fff;
+}
+
+.el-form-item {
+    margin-bottom: 30px;
+}
+
+.el-form-item__error {
+    color: #eee;
+    font-size: 1em;
+}
+
+.el-table--group,
+.el-table--border {
+    border: 1px solid $color-dividingLine;
+}
+
+.el-table th {
+    color: $color-theme;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.el-table th,
+.el-table td {
+    padding: 10px 0;
+}
+
+.el-table th {
+    background-color: $color-thBg;
+}
+
+.el-table thead.is-group th {
+    background-color: $color-thBg;
+}
+
+.el-table--border th {
+    border-right: 0.8px solid $color-dividingLine;
+    border-bottom: 1px solid $color-dividingLine;
+}
+
+.el-table--border td {
+    border-right: 1.2px solid $color-dividingLine;
+    border-bottom: 1.2px solid $color-dividingLine;
+}
+
+.el-table th.is-leaf,
+.el-table td {
+    border-bottom: 1px solid $color-dividingLine;
+}
+
+.el-table .cell {
+    line-height: 23px;
+}
+
+.el-input--small .el-input__inner {
+    height: 35px;
+}
+
+//弹框
+.el-popover {
+    min-width: 0px;
+    text-align: center;
+    .el-button {
+        font-size: 1.2em;
+    }
+    .icon {
+        width: 1.5em;
+        height: 1.5em;
+        display: inline-block;
+        position: relative;
+        top: 0.25em;
+    }
+}
